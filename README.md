@@ -19,3 +19,7 @@ nx.form2data(formData);
 
 // { u: 'username', p: 'pass1' }
 ```
+
+## required
+- Array.from
+- Browser FormData
