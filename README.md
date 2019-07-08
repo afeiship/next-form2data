@@ -9,6 +9,7 @@ npm install -S afeiship/next-form2data --registry=https://registry.npm.taobao.or
 ## usage
 ```js
 //DOCS here!
+// DO NOT USE in NODE ENV (because: form-data package has bug.)
 import nxForm2Data from 'next-form2data';
 
 const formData = new FormData();
