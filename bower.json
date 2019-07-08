@@ -1,7 +1,7 @@
 {
   "name": "next-form2data",
   "version": "0.0.1",
-  "description": "FormData to js data",
+  "description": "FormData to js data.",
   "main": "dist/next-form2data.js",
   "authors": [
     "afei"

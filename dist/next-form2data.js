@@ -2,7 +2,7 @@
  * name: next-form2data
  * url: https://github.com/afeiship/next-form2data
  * version: 1.0.0
- * date: 2019-07-08T13:18:44.290Z
+ * date: 2019-07-08T13:19:59.845Z
  * license: MIT
  */
 
