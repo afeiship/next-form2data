@@ -3,12 +3,13 @@
 
 ## installation
 ```bash
-npm install -S afeiship/next-form2data --registry=https://registry.npm.taobao.org
+npm install -S @feizheng/next-form2data
 ```
 
 ## usage
 ```js
-//DOCS here!
+import '@feizheng/next-form2data';
+
 // DO NOT USE in NODE ENV (because: form-data package has bug.)
 import nxForm2Data from 'next-form2data';
 
