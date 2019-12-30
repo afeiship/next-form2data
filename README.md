@@ -8,10 +8,8 @@ npm install -S @feizheng/next-form2data
 
 ## usage
 ```js
-import '@feizheng/next-form2data';
-
 // DO NOT USE in NODE ENV (because: form-data package has bug.)
-import nxForm2Data from 'next-form2data';
+import nxForm2Data from '@feizheng/next-form2data';
 
 const formData = new FormData();
 formData.append('u', 'username');
