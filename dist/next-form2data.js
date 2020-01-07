@@ -2,8 +2,8 @@
  * name: @feizheng/next-form2data
  * description: FormData to js data.
  * url: https://github.com/afeiship/next-form2data
- * version: 1.1.0
- * date: 2020-01-07 14:08:06
+ * version: 1.2.0
+ * date: 2020-01-07 14:08:39
  * license: MIT
  */
 
