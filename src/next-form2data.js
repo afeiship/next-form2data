@@ -5,7 +5,14 @@
   nx.form2data = function(inFormData) {
     var result = {};
     inFormData.forEach(function(value, key) {
-      result[key] = value;
+      if (typeof result[key] !== 'undefined') {
+        if (typeof result[key] !== 'object') {
+          result[key] = [result[key]];
+        }
+        result[key].push(value);
+      } else {
+        result[key] = value;
+      }
     });
     return result;
   };

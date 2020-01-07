@@ -1,16 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  <script src="/node_modules/@feizheng/next-js-core2/dist/next-js-core2.js"></script>
+  <script src="/@feizheng/next-js-core2/dist/next-js-core2.js"></script>
   <script src="/next-form2data.js"></script>
 </head>
+
 <body>
+  <form id="myForm">
+    <select name="select1" multiple>
+      <option value="a">AAA</option>
+      <option value="b">BBB</option>
+      <option value="c">CCCC</option>
+      <option value="d">DDD</option>
+    </select>
+    <p><input name="username" type="text" placeholder="username" /></p>
+    <p><input name="password" type="text" placeholder="password" /></p>
+    <button type="submit">submit</button>
+  </form>
+
   <script>
-    //YOUR CODES
+    var form = document.getElementById('myForm');
+
+    function onSubmit(event) {
+      if (event) { event.preventDefault(); }
+      var formData = new FormData(form);
+      var json = nx.form2data(formData);
+      console.log(json);
+    }
+    form.addEventListener('submit', onSubmit, false);
   </script>
 </body>
+
 </html>

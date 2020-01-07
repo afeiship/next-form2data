@@ -2,8 +2,8 @@
  * name: @feizheng/next-form2data
  * description: FormData to js data.
  * url: https://github.com/afeiship/next-form2data
- * version: 1.0.0
- * date: 2019-12-30 10:28:21
+ * version: 1.1.0
+ * date: 2020-01-07 14:08:06
  * license: MIT
  */
 
@@ -14,7 +14,14 @@
   nx.form2data = function(inFormData) {
     var result = {};
     inFormData.forEach(function(value, key) {
-      result[key] = value;
+      if (typeof result[key] !== 'undefined') {
+        if (typeof result[key] !== 'object') {
+          result[key] = [result[key]];
+        }
+        result[key].push(value);
+      } else {
+        result[key] = value;
+      }
     });
     return result;
   };
