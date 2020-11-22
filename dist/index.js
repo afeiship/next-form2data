@@ -3,7 +3,7 @@
  * description: FormData to js data.
  * homepage: https://github.com/afeiship/next-form2data
  * version: 1.0.0
- * date: 2020-11-22 20:32:07
+ * date: 2020-11-22 20:33:22
  * license: MIT
  */
 
