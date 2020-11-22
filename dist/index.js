@@ -1,19 +1,19 @@
 /*!
- * name: @feizheng/next-form2data
+ * name: @jswork/next-form2data
  * description: FormData to js data.
- * url: https://github.com/afeiship/next-form2data
- * version: 1.2.0
- * date: 2020-01-07 14:08:39
+ * homepage: https://github.com/afeiship/next-form2data
+ * version: 1.0.0
+ * date: 2020-11-22 20:32:07
  * license: MIT
  */
 
-(function() {
+(function () {
   var global = global || this || window || Function('return this')();
-  var nx = global.nx || require('@feizheng/next-js-core2');
+  var nx = global.nx || require('@jswork/next');
 
-  nx.form2data = function(inFormData) {
+  nx.form2data = function (inFormData) {
     var result = {};
-    inFormData.forEach(function(value, key) {
+    inFormData.forEach(function (value, key) {
       if (typeof result[key] !== 'undefined') {
         if (typeof result[key] !== 'object') {
           result[key] = [result[key]];
@@ -30,5 +30,3 @@
     module.exports = nx.form2data;
   }
 })();
-
-//# sourceMappingURL=next-form2data.js.map

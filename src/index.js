@@ -1,10 +1,10 @@
-(function() {
+(function () {
   var global = global || this || window || Function('return this')();
-  var nx = global.nx || require('@feizheng/next-js-core2');
+  var nx = global.nx || require('@jswork/next');
 
-  nx.form2data = function(inFormData) {
+  nx.form2data = function (inFormData) {
     var result = {};
-    inFormData.forEach(function(value, key) {
+    inFormData.forEach(function (value, key) {
       if (typeof result[key] !== 'undefined') {
         if (typeof result[key] !== 'object') {
           result[key] = [result[key]];
