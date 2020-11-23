@@ -24,10 +24,6 @@ nx.form2data(formData);
 // { u: 'username', p: 'pass1' }
 ```
 
-## required
-- Array.from
-- Browser FormData
-
 ## resources
 - https://stackoverflow.com/questions/41431322/how-to-convert-formdatahtml5-object-to-json
 
