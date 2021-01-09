@@ -2,8 +2,8 @@
  * name: @jswork/next-form2data
  * description: FormData to js data.
  * homepage: https://github.com/afeiship/next-form2data
- * version: 1.0.0
- * date: 2020-11-22 20:33:22
+ * version: 1.0.1
+ * date: 2021-01-09 16:57:41
  * license: MIT
  */
 
